@@ -1,8 +1,7 @@
 /*
- * Usage of CDK Matrix
- *
- * File:   cdkexample1.cc
- * Author: Michael Teeple (No changes yet)
+ * File: cdkexample.cc
+ * When made by makefile will output to program6
+ * Author: Michael Teeple 
  * Email:  mxt151430@utdallas.edu
  */
 
