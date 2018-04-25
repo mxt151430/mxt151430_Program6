@@ -4,7 +4,7 @@
 # mxt151430@utdallas.edu
 #
 
-CXX = g++
+CXX = g++ -std=c++11 -g
 CXXFLAGS = -Wall -g 
 CPPFLAGS = -I/scratch/perkins/include
 LDFLAGS = -L/scratch/perkins/lib
@@ -24,6 +24,7 @@ clean:
 $(EXECFILE): $(OBJS)
 	$(CXX) -o $@ $(OBJS) $(LDFLAGS) $(LDLIBS)
 
+#Backup
 backup: clean
 	@mkdir -p ~/backups; chmod 700 ~/backups
 	@$(eval CURDIRNAME := $(shell basename `pwd`))
